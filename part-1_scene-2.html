@@ -1,0 +1,355 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>One Flew Over the Cuckoo's Nest - Part 1, Scene 2</title>
+        <link rel="stylesheet" href="css/foundation.css" />
+        <script src="js/vendor/modernizr.js"></script>
+        <style>
+        .cast > div:last-child > div > p {
+            margin-bottom: 0;
+        }
+
+        .scene {
+            display: block;
+            transition: border-color 200ms ease-out, background-color 200ms ease-out;
+        }
+
+        .scene:hover {
+            background-color: #b9edff;
+            border-color: #83e0ff;
+        }
+
+        .scene p > strong {
+            color: #0078a0;
+        }
+
+        .lines table {
+            width: 100%;
+            border: 0;
+        }
+
+        .lines strong {
+            color: #0078a0;
+        }
+
+        .lines p {
+            font-size: 1.4em;
+        }
+
+        tr td:first-child {
+            width: 125px;
+        }
+
+        tr td p span {
+            font-style: italic;
+            font-size: 0.8em;
+            color: #999;
+        }
+
+        #typed-cursor {
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite; }
+
+        @-keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @-webkit-keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @-moz-keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        </style>
+    </head>
+    <body>
+
+        <div class="row">
+            <div class="large-12 columns">
+                <h1>One Flew Over the Cuckoo's Nest</h1>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="lines large-12 columns">
+                <!-- <dl class="choose-character sub-nav"> -->
+                <!--   <dt>Choose your character:</dt> -->
+                <!--   <dd class="active"><a href="#">Chief Bromden</a></dd> -->
+                <!--   <dd><a href="#">Warren</a></dd> -->
+                <!--   <dd><a href="#">Williams</a></dd> -->
+                <!--   <dd><a href="#">Nurse Ratched</a></dd> -->
+                <!-- </dl> -->
+                <table>
+                  <tbody>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script>
+        $(document).foundation();
+        $(function(){
+            // $("dl dd").on("click", "a", function(e){
+            //     if ($(this).parent().hasClass("active")) { return false; }
+            //     $(".choose-character dd").removeClass("active");
+            //     $(this).parent().addClass("active");
+            // });
+
+            var character = 'mcmurphy',
+                lines = [
+                {
+                    'character': 'mcmurphy',
+                    'position': 1,
+                    'lines': [
+                    "<span>(off stage)</span> Buddy, you are so wrong,",
+                    "I don't have to do this, and I don't have to do that,",
+                    "and get the hell away from me.",
+                    "<span>(backs into fighting crouch, and directs speech to audience)</span>",
+                    "Good mornin' buddies!",
+                    "Mighty nice fall day!",
+                    "Damn, what a sorry lookin' bunch!",
+                    ],
+                },
+                {
+                    'character': 'warren',
+                    'position': 2,
+                    'lines': [
+                        "Now, see here, Mister -",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 3,
+                    'lines': [
+                        "Get away from me, boy,",
+                        "give me a minute to look my new place over, will ya?",
+                        "What the hell,",
+                        "I never been in a Institute of Psychology before!",
+                    ],
+                },
+                {
+                    'character': 'warren',
+                    'position': 4,
+                    'lines': [
+                        "Mister, we got rules",
+                        "I gotta take your temperature,",
+                        "and I gotta get you showered.",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 5,
+                    'lines': [
+                        "All you gotta do",
+                        "is let me get acquainted with my new buddies here",
+                        "and if you do one thing more -!",
+                    ],
+                },
+                {
+                    'character': 'warren',
+                    'position': 6,
+                    'lines': [
+                        "<span>(grimly)</span> All right, fella,",
+                        "you askin' for it,",
+                        "you gonna get it. <span>(turns and marches out of the ward)</span>",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 7,
+                    'lines': [
+                        "<span>(laughs his wall-shaking laugh)</span>",
+                        "That's a whole deal better. <span>(to audience)</span>",
+                        "Now, my name is McMurphy,",
+                        "buddies,",
+                        "R.P. McMurphy,",
+                        "and I am a gamblin' fool.",
+                        "What's that you're playin'?",
+                        "Pinochle?",
+                        "Jesus,",
+                        "ain't you got a straight deck around here?",
+                        "Well, say",
+                        "here we go,",
+                        "I brought along my own just incase.",
+                        "Every card a picture -",
+                        "and check these pictures, huh?",
+                        "Y'see buddies,",
+                        "what happened was I got in a couple hassles down at the Work Farm",
+                        "and the Court ruled that I'm a psychopath.",
+                        "And do you think I'm gonna argue with the Court? <span>(winks broadly)</span>",
+                        "Shoo, you can bet your bottom dollar I don't.",
+                        "If it gets me outta those damn pea fields",
+                        "I'll be whatever their little heart desires,",
+                        "be it a psychopath or mad dog or werewolf, <span>(notices chief)</span>",
+                        "because I don't care if I never see another weedin' hoe to my dying day.",
+                        "<span>(stops short at chief strapped in chair)</span>",
+                        "Hooeee! What have we got here?",
+                        "Hey; what's your story, big chief? <span>(pause)</span>",
+                        "What they got you strapped down for?",
+                        "Well, whatever it is, I don't like it,",
+                        "no sir. <span>(unstraps Chief)</span>",
+                        "It just ain't dignified.",
+                        "<span>(Chief rises, McMurphy whistles)</span>",
+                        "Say, when you get your full growth,",
+                        "you're gonna be pretty good-sized.",
+                        "<span>(Nurse Ratched enters pursued by Warren)</span>",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 8,
+                    'lines': [
+                        "<span>(holding out her hand)</span> Mr. McMurphy",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 9,
+                    'lines': [
+                        "<span>(shaking hands with her)</span> Howdy, Ma'am!",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 10,
+                    'lines': [
+                        "Aide Warren tells me you are being difficult.",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 11,
+                    'lines': [
+                        "<span>(pained)</span> Me?",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 12,
+                    'lines': [
+                        "I understand you refused to take your admission shower?",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 13,
+                    'lines': [
+                        "Well, as to that, Ma'am,",
+                        "they showered me at the courhouse",
+                        "and last night at the jail,",
+                        "and I swear they'd of washed my ears for me on the way over",
+                        "if they coulda found the facilities.",
+                        "<span>(explodes with laughter)</span>",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 14,
+                    'lines': [
+                        "That's quite amusing, Mr. McMurphy.",
+                        "But you must realise that our policies are engineered for your cure.",
+                        "Which means co-operation.",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 15,
+                    'lines': [
+                        "Ma'am.",
+                        "I'll co-operate from hell to Thursday,",
+                        "but you wouldn't want me to be unpolite?",
+                        "I mean,",
+                        "had to get acquainted with my new buddies?",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 16,
+                    'lines': [
+                        "<span>(ever smiling)</span> Please understand,",
+                        "I do appreciate the way you've taken it upon yourself to...",
+                        "orient with other patients?",
+                        "But everything in its own time.",
+                        "You must follow the rules.",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 17,
+                    'lines': [
+                        "<span>(face close to nurses, smiling brightly)</span> Ya know, Ma'am -",
+                        "that is the exact same thing",
+                        "somebody always tells me about the rules -",
+                        "just when I'm thinkin' a breakin' every one of 'em.",
+                        "<span>(nurse ushers McMurphy out. Warren follows)</span>",
+                    ],
+                },
+                {
+                    'character': 'chief bromden',
+                    'position': 18,
+                    'lines': [
+                        "New admission, Papa,",
+                        "now they gotta fix him with controls.",
+                        "They got wires runnin' to each man and units planted in our heads.",
+                        "There's magnets in the floow so we can't walk no way but what they want.",
+                        "We got stone brains, cast-iron guts, and copper where they took away our nerves.",
+                        "We got cog-wheels in our bellies and a welded grin.",
+                        "And every time they throw a switch it turns us on or off.",
+                        "They got a network clear across the land - factories, like this,",
+                        "For fixin' up mistakes they made outside.",
+                        "The Combine. Papa, Big, big, big. <span>(listens for a moment)</span>",
+                        "Oh, yes, there is such a thing!",
+                        "They got me way back a go, the way they got you!",
+                    ],
+                },
+            ];
+
+            function append_text() {
+                if (lines.length > 0) {
+                    // if character has no more lines, remove from dialogue
+                    if (lines[0]['lines'].length == 0) lines.shift();
+
+                    // if it isn't our character, add their lines in one chink and exit
+                    if (lines[0]['character'] != character || lines[0]['character'] == 'both') {
+                        $("<tr id='pos-" + lines[0]['position'] + "'><td><p><strong>" + lines[0]['character'] + "</strong></p></td><td><p>" + lines[0]['lines'].join(" ") + "</p></td></tr>").appendTo("tbody");
+                        lines[0]['lines'] = [];
+                        return;
+                    }
+
+                    // the table row of this character's lines
+                    $pos = $("#pos-" + lines[0]['position']);
+
+                    // if it already exists, append chunks of the lines
+                    if ($pos.length) {
+                        $("td:last > p", $pos).append(" " + lines[0]['lines'].shift());
+                    // if it doesn't already exist, create the row
+                    } else {
+                        $("<tr id='pos-" + lines[0]['position'] + "'><td><p><strong>" + lines[0]['character'] + "</strong></p></td><td><p>" + lines[0]['lines'].shift() + "</p></td></tr>").appendTo("tbody");
+                    }
+                }
+
+                // scroll to bottom of table
+                $("table").scrollTop($("table")[0].scrollHeight);
+            }
+
+            $(window).bind('keypress', function(e) {
+                append_text();
+            });
+        });
+        </script>
+    </body>
+</html>

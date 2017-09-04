@@ -1,0 +1,337 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>One Flew Over the Cuckoo's Nest - Part 3, Scene 2</title>
+        <link rel="stylesheet" href="css/foundation.css" />
+        <script src="js/vendor/modernizr.js"></script>
+        <style>
+        .cast > div:last-child > div > p {
+            margin-bottom: 0;
+        }
+
+        .scene {
+            display: block;
+            transition: border-color 200ms ease-out, background-color 200ms ease-out;
+        }
+
+        .scene:hover {
+            background-color: #b9edff;
+            border-color: #83e0ff;
+        }
+
+        .scene p > strong {
+            color: #0078a0;
+        }
+
+        .lines table {
+            width: 100%;
+            border: 0;
+        }
+
+        .lines strong {
+            color: #0078a0;
+        }
+
+        .lines p {
+            font-size: 1.4em;
+        }
+
+        tr td:first-child {
+            width: 125px;
+        }
+
+        tr td p span {
+            font-style: italic;
+            font-size: 0.8em;
+            color: #999;
+        }
+
+        #typed-cursor {
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite; }
+
+        @-keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @-webkit-keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @-moz-keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        </style>
+    </head>
+    <body>
+
+        <div class="row">
+            <div class="large-12 columns">
+                <h1>One Flew Over the Cuckoo's Nest</h1>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="lines large-12 columns">
+                <!-- <dl class="choose-character sub-nav"> -->
+                <!--   <dt>Choose your character:</dt> -->
+                <!--   <dd class="active"><a href="#">Chief Bromden</a></dd> -->
+                <!--   <dd><a href="#">Warren</a></dd> -->
+                <!--   <dd><a href="#">Williams</a></dd> -->
+                <!--   <dd><a href="#">Nurse Ratched</a></dd> -->
+                <!-- </dl> -->
+                <table>
+                  <tbody>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script>
+        $(document).foundation();
+        $(function(){
+            // $("dl dd").on("click", "a", function(e){
+            //     if ($(this).parent().hasClass("active")) { return false; }
+            //     $(".choose-character dd").removeClass("active");
+            //     $(this).parent().addClass("active");
+            // });
+
+            var character = 'mcmurphy',
+                lines = [
+                {
+                    'character': 'mcmurphy',
+                    'position': 1,
+                    'lines': [
+                        "Say, buddy,",
+                        "is this the way these leetle meetings usually go?",
+                        "Bunch of chickens at a peckin' party?",
+                    ],
+                },
+                {
+                    'character': 'harding',
+                    'position': 2,
+                    'lines': [
+                        "Pecking party?",
+                        "I haven't the faintest notion what you're talking about.",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 3,
+                    'lines': [
+                        "Why,",
+                        "I'll just explain it.",
+                        "The flock gets sight of a speck of blood on some chicken",
+                        "and they go peckin' at it, see?",
+                        "Till there's nothing left but",
+                        "blood",
+                        "and bones",
+                        "and feathers.",
+                        "But usually a couple of the flock gets spotted in the fracas,",
+                        "then it's their turn.",
+                    ],
+                },
+                {
+                    'character': 'harding',
+                    'position': 4,
+                    'lines': [
+                        "<span>(lacing his hands together. forcing himself to be casual.)</span>",
+                        "A pecking party. That certainly is a pleasant analogy, my friend.",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 5,
+                    'lines': [
+                        "That's right,",
+                        "my friend.",
+                        "And that's exactly what that meeting reminded me of.",
+                    ],
+                },
+                {
+                    'character': 'harding',
+                    'position': 6,
+                    'lines': [
+                        "And that makes me the chicken with the spot of blood, eh, friend?",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 7,
+                    'lines': [
+                        "That's right, friend.",
+                        "And you want to know who pecks the first peck?",
+                        "It's that ol' nurse, that's who.",
+                    ],
+                },
+                {
+                    'character': 'harding',
+                    'position': 8,
+                    'lines': [
+                        "So it's as simple as that. As stupidly simple as that. You're on our ward six hours and have already simplified the work of Freud, Jung and Maxwell Jones and summed it up in one analogy: it's a peckin' party.",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 9,
+                    'lines': [
+                        "I'm not talkin' 'bout Fred Yoong and whosis Jones,",
+                        "buddy,",
+                        "I'm talkin' 'bout that crummy meeting",
+                        "and what that nurse did to you.",
+                    ],
+                },
+                {
+                    'character': 'harding',
+                    'position': 11,
+                    'lines': [
+                        "Did to me?",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 12,
+                    'lines': [
+                        "In spades.",
+                    ],
+                },
+                {
+                    'character': 'harding',
+                    'position': 13,
+                    'lines': [
+                        "Why, this is incredible!",
+                        "<span>(McMurphy stands up)</span>",
+                        "You completely disregard the fact that everything she did was for my benefit.",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 14,
+                    'lines': [
+                        "Horse apples.",
+                    ],
+                },
+                {
+                    'character': 'harding',
+                    'position': 15,
+                    'lines': [
+                        "I'm disappointed in you, my friend. I had judged you were more intelligent. But it's evident I made a mistake.",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 16,
+                    'lines': [
+                        "The hell with you,",
+                        "buddy.",
+                    ],
+                },
+                {
+                    'character': 'harding',
+                    'position': 17,
+                    'lines': [
+                        "Oh, yes, I also noticed your primitive brutality. Psycopath with definite sadistic tendencies, probably motivated by unreasoning egomania. And those talents certainly qualify you as a therapist, my friend. Oh, yes, they render you quite capable of criticizing Miss Ratched, although she's a highly regarded psychiatric nurse with twenty years' experience in the field. But you, no doubt, with your talent could work subconscious miracles, soothe the aching mind and heal the wounded superego. You could probably cure the whole ward, Vegetables and all, in six months, ladies and gentlemen, or your money back!",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 18,
+                    'lines': [
+                        "<span>(regards him levelly)</span>",
+                        "Are you tellin' me",
+                        "that this crap that went on today",
+                        "is doing some kinda good?",
+                    ],
+                },
+                {
+                    'character': 'harding',
+                    'position': 19,
+                    'lines': [
+                        "Why else would we subject ourselves to it? Miss Ratched may be a very strict lady, but she is not some kind of monster chicken, pecking our eyes out.",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 20,
+                    'lines': [
+                        "No,",
+                        "buddy.",
+                        "She ain't pecking at your eyes.",
+                        "She is aimin' right square at the family jewels!",
+                    ],
+                },
+                {
+                    'character': 'harding',
+                    'position': 21,
+                    'lines': [
+                        "Miss Ratched! Why, she's like a mother, a tender mother -",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 22,
+                    'lines': [
+                        "Don't give me that tender-mother crap.",
+                        "She's a ball-cutter from way back.",
+                    ],
+                },
+                {
+                    'character': 'harding',
+                    'position': 23,
+                    'lines': [
+                        "<span>(his talk speeds up, his hands dance and flutter, a wild puppet doing a high-strung dance.)</span>",
+                        "Why, see here, my friend, my psycopathic sidekick, Miss Ratched is a veritable angel of merxy and - why, everybody knows it. She's unselfish as the wind, toiling thanklessly for the good of all, day after day, seven days a week. Why she has no life, no husband, nothing but her work, and everybody knows it. Do you think she enjoys being stern with us, asking those questions, probing our subconcious till it hurts? Oh, no, my egomaniac buddy, she is decicated, she gives every bit of herself,",
+                        "<span>(McMurphy is on fire at this point)</span>",
+                        "she desires nothing more on earth than to see us walk out of here adjusted and capable once more of coping with life. So you're wrong, I assure you. Our Miss Ratched is the kindest, sweetest, the most benevolent woman that I have ... that I have ... ever ... <span>(Stops. Begins to laugh. Then he is crying.)</span> Oh, the bitch. The bitch ...",
+                    ],
+                },
+            ];
+
+            function append_text() {
+                if (lines.length > 0) {
+                    // if character has no more lines, remove from dialogue
+                    if (lines[0]['lines'].length == 0) lines.shift();
+
+                    // if it isn't our character, add their lines in one chink and exit
+                    if (lines[0]['character'] != character || lines[0]['character'] == 'both') {
+                        $("<tr id='pos-" + lines[0]['position'] + "'><td><p><strong>" + lines[0]['character'] + "</strong></p></td><td><p>" + lines[0]['lines'].join(" ") + "</p></td></tr>").appendTo("tbody");
+                        lines[0]['lines'] = [];
+                        return;
+                    }
+
+                    // the table row of this character's lines
+                    $pos = $("#pos-" + lines[0]['position']);
+
+                    // if it already exists, append chunks of the lines
+                    if ($pos.length) {
+                        $("td:last > p", $pos).append(" " + lines[0]['lines'].shift());
+                    // if it doesn't already exist, create the row
+                    } else {
+                        $("<tr id='pos-" + lines[0]['position'] + "'><td><p><strong>" + lines[0]['character'] + "</strong></p></td><td><p>" + lines[0]['lines'].shift() + "</p></td></tr>").appendTo("tbody");
+                    }
+                }
+
+                // scroll to bottom of table
+                $("table").scrollTop($("table")[0].scrollHeight);
+            }
+
+            $(window).bind('keypress', function(e) {
+                append_text();
+            });
+        });
+        </script>
+    </body>
+</html>

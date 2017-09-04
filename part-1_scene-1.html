@@ -1,0 +1,293 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>One Flew Over the Cuckoo's Nest - Part 1, Scene 1</title>
+        <link rel="stylesheet" href="css/foundation.css" />
+        <script src="js/vendor/modernizr.js"></script>
+        <style>
+        .cast > div:last-child > div > p {
+            margin-bottom: 0;
+        }
+
+        .scene {
+            display: block;
+            transition: border-color 200ms ease-out, background-color 200ms ease-out;
+        }
+
+        .scene:hover {
+            background-color: #b9edff;
+            border-color: #83e0ff;
+        }
+
+        .scene p > strong {
+            color: #0078a0;
+        }
+
+        .lines table {
+            width: 100%;
+            border: 0;
+        }
+
+        .lines strong {
+            color: #0078a0;
+        }
+
+        .lines p {
+            font-size: 1.4em;
+        }
+
+        tr td:first-child {
+            width: 125px;
+        }
+
+        tr td p span {
+            font-style: italic;
+            font-size: 0.8em;
+            color: #999;
+        }
+
+        #typed-cursor {
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite; }
+
+        @-keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @-webkit-keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @-moz-keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        </style>
+    </head>
+    <body>
+
+        <div class="row">
+            <div class="large-12 columns">
+                <h1>One Flew Over the Cuckoo's Nest</h1>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="lines large-12 columns">
+                <!-- <dl class="choose-character sub-nav"> -->
+                <!--   <dt>Choose your character:</dt> -->
+                <!--   <dd class="active"><a href="#">Chief Bromden</a></dd> -->
+                <!--   <dd><a href="#">Warren</a></dd> -->
+                <!--   <dd><a href="#">Williams</a></dd> -->
+                <!--   <dd><a href="#">Nurse Ratched</a></dd> -->
+                <!-- </dl> -->
+                <table>
+                  <tbody>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script>
+        $(document).foundation();
+        $(function(){
+            // $("dl dd").on("click", "a", function(e){
+            //     if ($(this).parent().hasClass("active")) { return false; }
+            //     $(".choose-character dd").removeClass("active");
+            //     $(this).parent().addClass("active");
+            // });
+
+            var character = 'williams',
+                lines = [
+                {
+                    'character': 'chief bromden',
+                    'position': 1,
+                    'lines': [
+                        "You hear it, Papa?",
+                        "The Black Machine.",
+                        "They got it goin', eighteen stories down below the ground.",
+                        "They're puttin' people in one end and out comes what they want.",
+                        "The way they do it, Papa,",
+                        "each night they tip the world on its side and everybody loose goes rattlin' to the bottom.",
+                        "Then they hook 'em by the heels,",
+                        "and hang 'em up and cut 'em open.",
+                        "Only by that time they got no innards,",
+                        "just some beat-up gears and stuff,",
+                        "and all they bleed is rust.",
+                        "You think I'm ravin' cause it sounds too awful to be true,",
+                        "but, my God, there's such a lot of things that's true even if they never really happen!",
+                    ],
+                },
+                {
+                    'character': 'warren',
+                    'position': 2,
+                    'lines': [
+                        "Well, well, here's the Chief.",
+                    ],
+                },
+                {
+                    'character': 'williams',
+                    'position': 3,
+                    'lines': [
+                        "The soopah-Chief.",
+                    ],
+                },
+                {
+                    'character': 'warren',
+                    'position': 4,
+                    'lines': [
+                        "Ol, deef an' dumb.",
+                    ],
+                },
+                {
+                    'character': 'williams',
+                    'position': 5,
+                    'lines': [
+                        "Had his breakfas' an' rarin' to go.",
+                    ],
+                },
+                {
+                    'character': 'warren',
+                    'position': 6,
+                    'lines': [
+                        "Don' you know keep to your room till that bell ring?",
+                        "Haw, look at 'im shag it! Big enough t'eat apples off my head an he scared like a baby.",
+                    ],
+                },
+                {
+                    'character': 'williams',
+                    'position': 7,
+                    'lines': [
+                        "What you want, baby?",
+                        "Yo' broom? <span>(going to fetch it)</span>",
+                        "Thassit. He want his broom.",
+                    ],
+                },
+                {
+                    'character': 'warren',
+                    'position': 8,
+                    'lines': [
+                        "Ol' Chief Broom.",
+                        "Thassit, baby, thassa good looney.",
+                    ],
+                },
+                {
+                    'character': 'williams',
+                    'position': 9,
+                    'lines': [
+                        "<span>(thrusts broom into Chief's hands)</span> Start sweepin', baby.",
+                    ],
+                },
+                {
+                    'character': 'warren',
+                    'position': 10,
+                    'lines': [
+                        "Ol' Broom Bromden.",
+                    ],
+                },
+                {
+                    'character': 'williams',
+                    'position': 11,
+                    'lines': [
+                        "Ol' Chief Broom. <span>(laughter)</span>",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 12,
+                    'lines': [
+                        "If you don't mind, boys? <span>(the aides are startled)</span>",
+                        "I don't think it wise to group up and stand around like that.",
+                        "Mean ol' Monday mornin', you know,",
+                        "such a lot to get done?",
+                    ],
+                },
+                {
+                    'character': 'both',
+                    'position': 13,
+                    'lines': [
+                        "Yeah, Miz Ratched.",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 14,
+                    'lines': [
+                        "That's fine, boys.",
+                        "Warren, you might start by getting poor Mr. Bromdem shaved,",
+                        "and Williams, you have dormitory duty, don't you?",
+                    ],
+                },
+                {
+                    'character': 'williams',
+                    'position': 15,
+                    'lines': [
+                        "Yeah, Miz Ratched.",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 16,
+                    'lines': [
+                        "That's just fine. <span>(nurse crosses to leave, williams follows)</span>",
+                    ],
+                },
+                {
+                    'character': 'williams',
+                    'position': 17,
+                    'lines': [
+                        "Yuh damn, Red skin!",
+                        "Don' like this, huh? <span>(he raises and brandishes it at Chief, making a buzzing sound, Chief recoils and plops into the chair, huddling in fright)</span>",
+                        "Hmm. Can't say I like that look in your eye. <span>(Takes a restraining strap from his back pocket, whips it around Chief's chest)</span>",
+                        "Yeah... tha's some better. <span>(warren laughs then walks off)</span>",
+                    ],
+                },
+            ];
+
+            function append_text() {
+                if (lines.length > 0) {
+                    // if character has no more lines, remove from dialogue
+                    if (lines[0]['lines'].length == 0) lines.shift();
+
+                    // if it isn't our character, add their lines in one chink and exit
+                    if (lines[0]['character'] != character || lines[0]['character'] == 'both') {
+                        $("<tr id='pos-" + lines[0]['position'] + "'><td><p><strong>" + lines[0]['character'] + "</strong></p></td><td><p>" + lines[0]['lines'].join(" ") + "</p></td></tr>").appendTo("tbody");
+                        lines[0]['lines'] = [];
+                        return;
+                    }
+
+                    // the table row of this character's lines
+                    $pos = $("#pos-" + lines[0]['position']);
+
+                    // if it already exists, append chunks of the lines
+                    if ($pos.length) {
+                        $("td:last > p", $pos).append(" " + lines[0]['lines'].shift());
+                    // if it doesn't already exist, create the row
+                    } else {
+                        $("<tr id='pos-" + lines[0]['position'] + "'><td><p><strong>" + lines[0]['character'] + "</strong></p></td><td><p>" + lines[0]['lines'].shift() + "</p></td></tr>").appendTo("tbody");
+                    }
+                }
+
+                // scroll to bottom of table
+                $("table").scrollTop($("table")[0].scrollHeight);
+            }
+
+            $(window).bind('keypress', function(e) {
+                append_text();
+            });
+        });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,596 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>One Flew Over the Cuckoo's Nest - Part 3, Scene 1</title>
+        <link rel="stylesheet" href="css/foundation.css" />
+        <script src="js/vendor/modernizr.js"></script>
+        <style>
+        .cast > div:last-child > div > p {
+            margin-bottom: 0;
+        }
+
+        .scene {
+            display: block;
+            transition: border-color 200ms ease-out, background-color 200ms ease-out;
+        }
+
+        .scene:hover {
+            background-color: #b9edff;
+            border-color: #83e0ff;
+        }
+
+        .scene p > strong {
+            color: #0078a0;
+        }
+
+        .lines table {
+            width: 100%;
+            border: 0;
+        }
+
+        .lines strong {
+            color: #0078a0;
+        }
+
+        .lines p {
+            font-size: 1.4em;
+        }
+
+        tr td:first-child {
+            width: 125px;
+        }
+
+        tr td p span {
+            font-style: italic;
+            font-size: 0.8em;
+            color: #999;
+        }
+
+        #typed-cursor {
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite; }
+
+        @-keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @-webkit-keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @-moz-keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        </style>
+    </head>
+    <body>
+
+        <div class="row">
+            <div class="large-12 columns">
+                <h1>One Flew Over the Cuckoo's Nest</h1>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="lines large-12 columns">
+                <!-- <dl class="choose-character sub-nav"> -->
+                <!--   <dt>Choose your character:</dt> -->
+                <!--   <dd class="active"><a href="#">Chief Bromden</a></dd> -->
+                <!--   <dd><a href="#">Warren</a></dd> -->
+                <!--   <dd><a href="#">Williams</a></dd> -->
+                <!--   <dd><a href="#">Nurse Ratched</a></dd> -->
+                <!-- </dl> -->
+                <table>
+                  <tbody>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script>
+        $(document).foundation();
+        $(function(){
+            // $("dl dd").on("click", "a", function(e){
+            //     if ($(this).parent().hasClass("active")) { return false; }
+            //     $(".choose-character dd").removeClass("active");
+            //     $(this).parent().addClass("active");
+            // });
+
+            var character = 'mcmurphy',
+                lines = [
+                {
+                    'character': 'mcmurphy',
+                    'position': 1,
+                    'lines': [
+                    "<span>(dealing cards, cigarette in teeth)</span>",
+                        "I wish some ass-hole",
+                        "in that nurses' hothouse",
+                        "would turn down that mother lovin' music",
+                        "<span>(rises towards the station)</span>",
+                        "Hooeee,",
+                        "I never heard such a drivin' racket in my life",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 2,
+                    'lines': [
+                        "Yes?",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 3,
+                    'lines': [
+                        "Would you mind",
+                        "switchin' off that",
+                        "God-damn noise?",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 4,
+                    'lines': [
+                        "Yes, Mr. McMurphy.",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 5,
+                    'lines': [
+                        "Yes, what?",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 6,
+                    'lines': [
+                        "Yes, I would mind.",
+                        "Music is considered therapeutic.",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 7,
+                    'lines': [
+                        "<span>(leans on glass)</span>",
+                        "What in the hell",
+                        "is therapeutic about Laurence Welk?",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 8,
+                    'lines': [
+                        "Please don't lean on the glass,",
+                        "it makes finger marks.",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 9,
+                    'lines': [
+                        "<span>(turning away, joking towards Billy and Harding)</span>",
+                        "Horse muh-noo-ur.",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 10,
+                    'lines': [
+                        "Oh, Mr. McMurphy, I should mention we have a rule about gambling.",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 11,
+                    'lines': [
+                        "We're just playing for cigarettes.",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 12,
+                    'lines': [
+                        "Are you sure those cigarettes don't represent something else?",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 13,
+                    'lines': [
+                        "Yeah,",
+                        "a hell of a lot of smoke,",
+                        "<span>(laughs, then stops, notices the others aren't laughing. Goes back to the table)</span>",
+                        "Y'know,",
+                        "you girls outa laugh it up a little! <span>(confidentially)</span>",
+                        "Listen,",
+                        "that was a good thing she brought up.",
+                        "How about we sweeten the game?",
+                    ],
+                },
+                {
+                    'character': 'billy',
+                    'position': 14,
+                    'lines': [
+                        "Where would we get the muh-money?",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 15,
+                    'lines': [
+                        "<span>(shielding action from the station, rubs fingers and thumbs together)</span>",
+                        "Stop-kiddin',",
+                        "I found out a few things about this place",
+                        "before",
+                        "I got sent over.",
+                        "Damn near half you boys",
+                        "in here pull compensation,",
+                        "three, four hundred a month,",
+                        "and it don't draw nothing' but dust.",
+                        "So all you got do is sign some IOU's",
+                    ],
+                },
+                {
+                    'character': 'harding',
+                    'position': 16,
+                    'lines': [
+                        "Alright with me.",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 17,
+                    'lines': [
+                        "Let's say each cigarette's worth a quarter?",
+                    ],
+                },
+                {
+                    'character': 'harding',
+                    'position': 18,
+                    'lines': [
+                        "Okay; run em!",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 19,
+                    'lines': [
+                        "Here we go!",
+                        "<span>(starts to deal. The bell rings)</span>",
+                        "Now what?",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 20,
+                    'lines': [
+                        "<span>(on the speaker)</span>",
+                        "Group Meeting.",
+                        "Time for Group Meeting.",
+                    ],
+                },
+                {
+                    'character': 'all men',
+                    'position': 21,
+                    'lines': [
+                        "<span>(all men except McMurphy get up quickly)</span>",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 22,
+                    'lines': [
+                        "What's going on?",
+                    ],
+                },
+                {
+                    'character': 'harding',
+                    'position': 23,
+                    'lines': [
+                        "Group Therapy. Every day this time.",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 24,
+                    'lines': [
+                        "Mr. McMurphy, would you like to join us?",
+                        "<span>(he takes an empty chair)</span>",
+                        "Now then, would anyone like to begin?",
+                        "<span>(her eyes are on Billy, who sits uncomfortably)</span>",
+                    ],
+                },
+                {
+                    'character': 'billy',
+                    'position': 25,
+                    'lines': [
+                        "<span>(touching bandage on wrist)</span> I Guh-guess I ought to talk about this.",
+                        "<span>(nurse waits)</span>",
+                        "It was on account of my mother.",
+                        "Every time she comes to visit it leaves me feeling just awful.",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 26,
+                    'lines': [
+                        "Your mother loves you Billy.",
+                    ],
+                },
+                {
+                    'character': 'billy',
+                    'position': 27,
+                    'lines': [
+                        "I know. that's the trouble. I'm such a duh-disappointment to her, but she won't admit it.",
+                        "She won't suh-see me like I am! I say to her, 'Mama I'm nuh-not right in the head.",
+                        "I can't even talk straight.' But she goes right on. And pretty soon I want to k-kill myself. So I try.",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 28,
+                    'lines': [
+                        "Is it possible that you may be trying to punish her?",
+                    ],
+                },
+                {
+                    'character': 'billy',
+                    'position': 29,
+                    'lines': [
+                        "Sure, it's possible! <span>(desperately)</span> Muh-miss Ratched, couldn't we talk about someone else today?",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 30,
+                    'lines': [
+                        "You really ought to face it, Billy. <span>(Billy turns away)</span>",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 31,
+                    'lines': [
+                        "<span>(watches in amazement)</span>",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 32,
+                    'lines': [
+                        "Very well. <span>(she opens a log book)</span>",
+                        "At the close of Friday's meeting we were discussing Mr. Harding's young wife...",
+                        "the face that she is extremely well-endowed in the bosom.",
+                        "Does anyone care to touch upon that further?",
+                        "<span>(silence)</span>",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 33,
+                    'lines': [
+                        "<span>(holds up his hands and then snaps his fingers)</span>",
+                        "Touch upon what?",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 34,
+                    'lines': [
+                        "The subject.",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 35,
+                    'lines': [
+                        "Oh, I thought you meant",
+                        "touch upon her,,,",
+                        "<span>(makes a mammary gesture and unleashes his laugh. But the men gaze at him blankly)</span>",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 36,
+                    'lines': [
+                        "To continue. According to the notes entered by various patients in the Log Book, Mr. Harding has stated that he was uneasy when walking with his wife on the street because of the manner in which other men stared at her. He has further said, quote:-",
+                    ],
+                },
+                {
+                    'character': 'harding',
+                    'position': 37,
+                    'lines': [
+                        "<span>(flat voiced)</span> She damned well gives them reason to stare, unquote.",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 38,
+                    'lines': [
+                        "Yes, He has also been heard to say that he may give her reason to seek sexual attention elsewhere. What reason, Dale?",
+                    ],
+                },
+                {
+                    'character': 'harding',
+                    'position': 39,
+                    'lines': [
+                        "Well... I can't say that I have been notably ardent...",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 40,
+                    'lines': [
+                        "Do you mean sexually inadequate?",
+                    ],
+                },
+                {
+                    'character': 'billy',
+                    'position': 41,
+                    'lines': [
+                        "<span>(with malice)</span> I'll b-bet he's afraid of her.",
+                    ],
+                },
+                {
+                    'character': 'harding',
+                    'position': 42,
+                    'lines': [
+                        "Not afraid!",
+                    ],
+                },
+                {
+                    'character': 'billy',
+                    'position': 43,
+                    'lines': [
+                        "Okay; suh-scared.",
+                    ],
+                },
+                {
+                    'character': 'harding',
+                    'position': 44,
+                    'lines': [
+                        "It might be fair to say... intimidated.",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 45,
+                    'lines': [
+                        "I see Mr. Harding has also stated that his wife's ample bosom gives him a feeling of inferiority. <span>(refers to notes)</span> She has commented, Dale that she finds you less than masculine. <span>(pause)</span> Don't you find significance in that?",
+                    ],
+                },
+                {
+                    'character': 'harding',
+                    'position': 46,
+                    'lines': [
+                        "Yes, of course, but I theorized... it seemed to me... sexually, at least...",
+                    ],
+                },
+                {
+                    'character': 'billy',
+                    'position': 47,
+                    'lines': [
+                        "Yeah. You're always saying she's such a guh-good lay. Suh-so, what happened in the suh-sack?",
+                    ],
+                },
+                {
+                    'character': 'harding',
+                    'position': 48,
+                    'lines': [
+                        "Complete... complete psychic impotence - oh damn, why do I always cry?",
+                    ],
+                },
+                {
+                    'character': 'billy',
+                    'position': 49,
+                    'lines': [
+                        "<span>(laughs)</span> F-f-faggott.",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 50,
+                    'lines': [
+                        "<span>(up on his chair with a roar)</span>",
+                        "Awright, know it off!",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 51,
+                    'lines': [
+                        "Mr. McMurphy.",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 52,
+                    'lines': [
+                        "Leave this guy alone!",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 53,
+                    'lines': [
+                        "Sit down.",
+                    ],
+                },
+                {
+                    'character': 'mcmurphy',
+                    'position': 54,
+                    'lines': [
+                        "Lissen.",
+                        "Buddy,",
+                        "you don't hafta take this shit!",
+                    ],
+                },
+                {
+                    'character': 'nurse ratched',
+                    'position': 55,
+                    'lines': [
+                        "<span>(closes the log book with a 'splat'!)</span>",
+                        "I suggest we close this meeting until discipline is improved.",
+                        "<span>(gathers her paraphernalia and exits)</span>",
+                    ],
+                },
+                {
+                    'character': 'all',
+                    'position': 56,
+                    'lines': [
+                        "<span>(there is silence among the men. A subtle sense of shame at having betrayed one of their own.",
+                        "Harding remains seated. McMurphy straddles a chair facing him.)</span>",
+                    ],
+                },
+            ];
+
+            function append_text() {
+                if (lines.length > 0) {
+                    // if character has no more lines, remove from dialogue
+                    if (lines[0]['lines'].length == 0) lines.shift();
+
+                    // if it isn't our character, add their lines in one chink and exit
+                    if (lines[0]['character'] != character || lines[0]['character'] == 'both') {
+                        $("<tr id='pos-" + lines[0]['position'] + "'><td><p><strong>" + lines[0]['character'] + "</strong></p></td><td><p>" + lines[0]['lines'].join(" ") + "</p></td></tr>").appendTo("tbody");
+                        lines[0]['lines'] = [];
+                        return;
+                    }
+
+                    // the table row of this character's lines
+                    $pos = $("#pos-" + lines[0]['position']);
+
+                    // if it already exists, append chunks of the lines
+                    if ($pos.length) {
+                        $("td:last > p", $pos).append(" " + lines[0]['lines'].shift());
+                    // if it doesn't already exist, create the row
+                    } else {
+                        $("<tr id='pos-" + lines[0]['position'] + "'><td><p><strong>" + lines[0]['character'] + "</strong></p></td><td><p>" + lines[0]['lines'].shift() + "</p></td></tr>").appendTo("tbody");
+                    }
+                }
+
+                // scroll to bottom of table
+                $("table").scrollTop($("table")[0].scrollHeight);
+            }
+
+            $(window).bind('keypress', function(e) {
+                append_text();
+            });
+        });
+        </script>
+    </body>
+</html>
